@@ -11,7 +11,7 @@ const PostCard = ({post}) => {
     const [likes, setLikes] = useState(post.likes_count)
     const currentUser = dummyUserData
 
-    const handleLike = () => {
+    const handleLike = () => {  
     }
     const navigate = useNavigate()
 
