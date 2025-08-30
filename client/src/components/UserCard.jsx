@@ -1,10 +1,10 @@
 import React from 'react'
-import { dummyUserData } from '../assets/assets'
 import { MapPin, MessageCircle, Plus, UserPlus } from 'lucide-react'
+import { useSelector } from 'react-redux'
 
 const UserCard = ({user}) => {
 
-    const currentUser = dummyUserData
+    const currentUser = useSelector((state)=>state.user.value)
  
     const handleFollow = async () => {
        
@@ -13,7 +13,7 @@ const UserCard = ({user}) => {
     const handleConnectionRequest = async () => {
        
     }
-
+ 
   return (
     <div key={user._id} className='p-4 pt-6 flex flex-col justify-between w-72 shadow border border-gray-200 rounded-md'>
         <div className='text-center'>
