@@ -233,6 +233,7 @@ export const getUserConnections = async (req, res) => {
     }
 }
 
+
 // Accept Connection Request
 export const acceptConnectionRequest = async (req, res) => {
     try {
@@ -262,7 +263,7 @@ export const acceptConnectionRequest = async (req, res) => {
         console.log(error);
         res.json({success: false, message: error.message})
     }
-}   
+} 
 
 // Get User Profiles
 export const getUserProfiles = async (req, res) =>{
